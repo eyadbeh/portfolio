@@ -1,0 +1,175 @@
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #1b1b1b;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icons a {
+    color: #ccc;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.case-studies {
+    width: 897px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.case-studies-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.case-studies-header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.case-studies-header p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.case-study-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.case-study-text {
+    width: 45%;
+}
+
+.case-study-text h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.case-study-text p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.button.blue {
+    font-weight: bold;
+    color: #fff;
+}
+
+.button.green {
+    font-weight: bold;
+    color: #fff;
+}
+
+.case-study-image {
+    width: 45%;
+}
+
+.case-study-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.fintech-label-one {
+    background-color: #fff6e9;
+    color: #FFA217;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.edtech-label {
+    background-color: #D0E6FF;
+    color: #000AFF;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pharma-label {
+    background-color: #E0FFF8;
+    color: #2AB090;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .case-studies {
+        width: 95%;
+    }
+
+    .case-study-item {
+        flex-direction: column;
+    }
+
+    .case-study-text,
+    .case-study-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,146 @@
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #080808;
+    color: #fff;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #1b1b1b;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icons a {
+    color: #ccc;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.testimonials {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonials-header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.testimonials-header p {
+    color: #888;
+    line-height: 1.6;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: black;
+    padding: 1px;
+    width: 445px;
+    height: 212px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid transparent;
+    background-image: linear-gradient(#080808, #080808), linear-gradient(to right, #292929, #080808);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 5px;
+}
+
+.quote-icon {
+    font-family: 'Raleway', sans-serif;
+    font-size: 6rem;
+    color: white;
+    position: absolute;
+    top: -30px;
+    left: 10px;
+}
+
+.testimonial-text {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.client-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* margin-right: 10px; */
+    object-fit: cover;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.client-name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1280px) {
+    .testimonials {
+        width: 95%;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        width: 100%;
+    }
+}
