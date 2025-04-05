@@ -97,13 +97,14 @@ nav {
     font-size: 6rem;
     color: white;
     position: absolute;
-    top: -30px;
+    top: -45px;
     left: 10px;
 }
 
 .testimonial-text {
     color: #ccc;
     line-height: 1.6;
+    margin-top: 10px;
     margin-bottom: 20px;
     padding-left: 10px;
 }
